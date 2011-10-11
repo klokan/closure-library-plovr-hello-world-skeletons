@@ -1,0 +1,1 @@
+function a(){var e=new OpenLayers.Map("map");e.addLayer(new OpenLayers.Layer.OSM);e.zoomToMaxExtent()}var b="main".split("."),c=this;!(b[0]in c)&&c.execScript&&c.execScript("var "+b[0]);for(var d;b.length&&(d=b.shift());)!b.length&&a!==void 0?c[d]=a:c=c[d]?c[d]:c[d]={};
