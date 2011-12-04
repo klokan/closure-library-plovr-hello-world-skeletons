@@ -1,0 +1,13 @@
+{
+  "id": "invites",
+  "define": {
+    "goog.DEBUG": false,
+    "goog.dom.ASSUME_STANDARDS_MODE": true
+  },
+  "inputs": "invites.js",
+  "paths": [
+    "."
+  ],
+  "mode": "ADVANCED", // "SIMPLE"
+  "level": "DEFAULT" // "VERBOSE"
+}

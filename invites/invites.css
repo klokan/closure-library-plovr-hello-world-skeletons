@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  margin-left: 4em;
+  border-left: 1em solid #0066CC;
+  padding-left: 2em;
+  margin-right: 4em;
+}
+
+#header {
+  border-bottom: 0.5em solid #ff0000;
+}
+
+textarea {
+  width: 30em;
+  height: 8em;
+  font-size: 16px;
+}
+
+#submit {
+  height: 4em;
+  width: 10em;
+  background-color: #008a35;
+  color: #fff;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#toolbar {
+  width: 30em;
+}
+
+#editor {
+  width: 30em;
+  height: 8em;
+  border: 1px solid #000;
+}
