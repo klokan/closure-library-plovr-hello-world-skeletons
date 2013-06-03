@@ -1,7 +1,8 @@
 Closure Library Skeletons: Plovr Hello World<br />
 ============================================<br />
 
-This repository contains varius skeletons used for development with Closure Library, Compiler and Plovr. It helps beginners to start.<br />
+This repository contains varius skeletons used for development with Closure Library, Compiler and Plovr.<br />
+It helps beginners to start.<br />
 
 To put your script in the workbench with Plovr up your sleeve, instructions for Mac OS X below.<br />
 
