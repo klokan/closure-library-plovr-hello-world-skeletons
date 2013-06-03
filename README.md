@@ -12,4 +12,4 @@ make
 Now edit main.js or any other script to your heart’s content,
 with your favourite text editor, I tend to use vim. :set omnifunc=javascriptcomplete#CompleteJS
 
-to test it just reload the file main.html that you opened in your browser.
+To test your changes just reload the file main.html that you opened in your browser.
