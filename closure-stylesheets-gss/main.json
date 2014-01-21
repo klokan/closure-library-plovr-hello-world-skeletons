@@ -1,0 +1,17 @@
+{
+  "id": "hello",
+  "define": {
+    "goog.DEBUG": false,
+    "goog.dom.ASSUME_STANDARDS_MODE": true
+  },
+  "inputs": "main.js",
+  "paths": [
+    "."
+  ],
+  "css-inputs": [
+    "main.gss"
+  ],
+  "css-output-file": "index.css",
+  "mode": "ADVANCED", // "SIMPLE"
+  "level": "VERBOSE" // "DEFAULT"
+}
