@@ -1,0 +1,22 @@
+// Example of communication between iframes.
+
+{
+  "id": "iframes-example",
+
+  "pretty-print": true,
+  "debug": true,
+
+
+  "define": {
+    "goog.DEBUG": false
+  },
+
+  "inputs": "src/main.js",
+  "paths": [
+    "src",
+    "templates"
+  ],
+
+  "mode": "ADVANCED", // "SIMPLE"
+  "level": "DEFAULT" // "VERBOSE"
+}
