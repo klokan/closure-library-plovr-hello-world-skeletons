@@ -7,7 +7,7 @@
 {
   "id": "module-example",
   "paths": ".",
-  "mode": "ADVANCE",
+  "mode": "ADVANCED",
   "level": "VERBOSE",
 
 
