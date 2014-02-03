@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Test page for module loading</title>
+	</head>
+	<body>
+		<div id="content"></div>
+		<script src="http://localhost:9810/compile?id=module-api-example"></script>
+		<script type="text/javascript">
+			var callback = function() {
+				example.api.setMessage("This message writes API module.");
+			}
+		</script>
+		<button onclick="example.api.isLoaded()?alert('Yes - TRUE.'):alert('No - FALSE.');">Is Loaded API module?</button>
+		<button onclick="example.api.load(callback);">Load API module!</button>
+	</body>
+</html>
