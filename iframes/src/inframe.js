@@ -1,8 +1,6 @@
 goog.provide('example.inframe');
 goog.require('goog.dom');
 goog.require('goog.dom.DomHelper');
-goog.require('goog.net.IframeIo');
-
 
 /**
  * Main

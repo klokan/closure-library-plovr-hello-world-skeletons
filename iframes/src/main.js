@@ -1,9 +1,7 @@
 // Example of communication between iframes.
-
-goog.require('example.IFrame');
 goog.require('example.templates');
 goog.require('goog.dom');
-
+goog.require('goog.dom.iframe');
 
 /**
  * Main
@@ -17,10 +15,10 @@ example.main = function() {
     dstcolor: 'orange',
     debug: goog.DEBUG
   };
-  new example.IFrame(goog.dom.getElement('if1'),
-      'iframe1',
+  goog.dom.iframe.createWithContent(goog.dom.getElement('if1'),
+      undefined,
       example.templates.iframe(contPars),
-      'width:33%;');
+      'width:33%;').id = 'iframe1';
 
   // iframe2
   contPars = {
@@ -30,10 +28,10 @@ example.main = function() {
     dstcolor: 'yellow',
     debug: goog.DEBUG
   };
-  new example.IFrame(goog.dom.getElement('if2'),
-      'iframe2',
+  goog.dom.iframe.createWithContent(goog.dom.getElement('if2'),
+      undefined,
       example.templates.iframe(contPars),
-      'width:33%;');
+      'width:33%;').id = 'iframe2';
 
   // iframe3
   contPars = {
@@ -43,10 +41,22 @@ example.main = function() {
     dstcolor: 'pink',
     debug: goog.DEBUG
   };
-  new example.IFrame(goog.dom.getElement('if3'),
-      'iframe3',
+  goog.dom.iframe.createWithContent(goog.dom.getElement('if3'),
+      undefined,
       example.templates.iframe(contPars),
-      'width:33%;');
+      'width:33%;').id = 'iframe3';
+};
+
+/**
+ * @constructor
+ * @param {Element} parent
+ * @param {string} id
+ * @param {string} content
+ * @param {string} style
+ */
+example.IFrame = function(parent, id, content, style) {
+  iframe = goog.dom.iframe.createWithContent(parent, undefined, content, style);
+  iframe.id = id;
 };
 
 goog.exportSymbol('main', example.main);
