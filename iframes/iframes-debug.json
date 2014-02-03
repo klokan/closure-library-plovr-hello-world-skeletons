@@ -1,0 +1,26 @@
+// This example code is based on 
+//   Closure: The Definitive Guide: Michael Bolin, 
+//   http://plovr.com/modules.html, 
+//   http://plovr.com/demo/modules.html 
+//   and https://github.com/bolinfest/plovr
+
+{
+  "id": "iframes-example",
+
+  "pretty-print": true,
+  "debug": true,
+
+
+  "define": {
+    "goog.DEBUG": true
+  },
+
+  "inputs": "src/main.js",
+  "paths": [
+    "src",
+    "templates"
+  ],
+
+  "mode": "ADVANCED", // "SIMPLE"
+  "level": "DEFAULT" // "VERBOSE"
+}

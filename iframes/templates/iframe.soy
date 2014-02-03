@@ -1,0 +1,20 @@
+{namespace example.templates}
+
+/**
+ * @param srciframe
+ * @param dstiframe
+ * @param srccolor
+ * @param dstcolor
+ * @param? debug
+ */
+{template .iframe}
+	{if $debug}
+  		<script src="http://localhost:9810/compile?id=inframe"></script>
+  	{else}
+  		<script src="inframe.js"></script>
+  	{/if}
+	<div id="background" style="background-color:{$srccolor}">
+	<center><h1>{$srciframe}</h1>
+  	<button onclick="changeColor('{$dstiframe}', '{$dstcolor}')">{$dstiframe} to {$dstcolor}</button></center>
+{/template}
+

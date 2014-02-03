@@ -1,0 +1,17 @@
+// Example of communication between iframes.
+
+{
+  "id": "inframe",
+
+  "pretty-print": true,
+  "debug": true,
+
+  "inputs": "src/inframe.js",
+  "paths": [
+    "src",
+    "templates"
+  ],
+
+  "mode": "ADVANCED", // "SIMPLE"
+  "level": "DEFAULT" // "VERBOSE"
+}
